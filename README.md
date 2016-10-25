@@ -1,4 +1,4 @@
-# Travis CI Arduino Init Script [![Build Status](https://travis-ci.org/adafruit/travis-ci-arduino.svg?branch=master)](https://travis-ci.org/adafruit/travis-ci-arduino)
+# Travis CI Arduino Init Script [![Build Status](https://travis-ci.org/blinkinlabs/travis-ci-arduino.svg?branch=master)](https://travis-ci.org/blinkinlabs/travis-ci-arduino)
 
 The purpose of this repo is to create a centrally managed dependency
 install script for all Adafruit Arduino Library Travis CI configs.
@@ -11,7 +11,7 @@ You will need to source the script in the `before_install` step of your
 `.travis.yml` file.
 
 ```
-source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
+source <(curl -SLs https://raw.githubusercontent.com/blinkinlabs/travis-ci-arduino/master/install.sh)
 ```
 
 **Example `.travis.yml`:**
@@ -19,7 +19,7 @@ source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/
 language: c
 sudo: false
 before_install:
-  - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
+  - source <(curl -SLs https://raw.githubusercontent.com/blinkinlabs/travis-ci-arduino/master/install.sh)
 install:
   - arduino --install-library "Adafruit SleepyDog Library,Adafruit FONA Library"
 script:
