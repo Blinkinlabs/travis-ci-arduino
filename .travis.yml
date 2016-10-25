@@ -7,6 +7,8 @@ script:
 #  - build_platform leonardo
 #  - build_platform zero
   - build_platform esp8266
+  - build_platform blinkytape
+
 notifications:
   email:
     on_success: change
